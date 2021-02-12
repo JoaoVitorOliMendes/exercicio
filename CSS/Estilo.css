@@ -6,7 +6,7 @@ body
 .cont
 {
     width: 100%;
-    max-height: 800px;
+    max-height: 40%;
     padding: 6vw;
     display: flex;
     justify-content: center;
@@ -31,6 +31,7 @@ body
 #a
 {
     color: blue;
+    
 }
 h1
 {
@@ -38,7 +39,7 @@ h1
 }
 #ativo
 {
-    padding:10px;
+    padding:6px;
     border-radius:50% 50% 90% 40%;
     background-color: red;
     color:white;
@@ -50,8 +51,8 @@ h1
 }
 .simimg
 {
-    width: 350px;
-    height: 350px;
+    width: 14vw;
+    height: 14vw;
     background-color: lightskyblue;
     border-radius: 5%;
     box-shadow: 6px 6px 6px 0 black;
@@ -108,8 +109,8 @@ h1
   }
   .dot {
 	cursor: pointer;
-	height: 15px;
-	width: 15px;
+	height: 0.8vw;
+	width: 0.8vw;
 	margin: 0 2px;
 	background-color: black;
 	border-radius: 50%;
@@ -129,3 +130,36 @@ h1
     max-height: 65%;
     max-width: 65%;
 }
+.spanlogo
+{
+    margin: 1% 0 0 0;
+    color:darkslategrey;
+    max-width: 6vw;
+    max-height: 6vw;
+}
+.pessoasimg
+{
+    padding: 75px;
+    max-width: 60%;
+}
+.h1pess
+{
+    display: block;
+    padding: 75px;
+    font-size: 2vw;
+}
+@media only screen and (max-width: 1100px) {
+	ul li{display: none;}
+    nav{max-height: 11vw;}
+    .spanlogo{margin: 0 0 0 0;}
+    body{overflow-x: hidden;}
+    .h1pess{padding: 0;}
+  }
+@media only screen and (max-width: 500px) {
+	ul li{display: none;}
+    nav{max-height: 11vw;}
+    .spanlogo{margin: -6% 0 0 0;}
+    body{overflow-x: hidden;}
+    .pessoasimg{max-width:100%;margin:0 0 0 0}
+    .h1pess{padding: 0;margin-left: 15%;}
+  }
