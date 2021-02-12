@@ -91,3 +91,6 @@ function showSlides(n) {
         imglogo[0].setAttribute("src", "IMG/png/logo.png");
     }
 })
+function home(){
+    window.scrollTo(0, 0);
+}
