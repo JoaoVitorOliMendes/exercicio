@@ -6,7 +6,8 @@ body
 .cont
 {
     width: 100%;
-    height: 600px;
+    max-height: 800px;
+    padding: 6vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,15 +16,17 @@ body
 {
     background-color: blue;
     border-radius: 50%;
-    height: 75px;
-    width: 75px;
+    width: 3vw;
+    height: 3vw;
     position: fixed;
     bottom: 5%;
+    left: 47.5%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    left: 50%;
+    align-items: center;    
+    text-align: center;
     opacity: 80%;
+    z-index: 100;
 }
 #a
 {
@@ -61,6 +64,7 @@ h1
 }
 .slideshow-container
 {
+    position: relative;
 	color: black;
 }
 .slide
@@ -71,10 +75,10 @@ h1
 }
 .prev, .next {
 	cursor: pointer;
-	position: relative;
+	position: absolute;
 	margin-top: 10%;
 	padding: 1%;
-	color: white;
+	color: white; 
 	font-size: 1vw;
 	transition: 1s ease;
   }
@@ -91,13 +95,13 @@ h1
 	opacity: 100%;
 }
   .next {
-    float: right;
+    right: 0;
 	border-radius: 3px 0 0 3px;
 	background-color: black;
 	opacity: 50%;
   }
   .prev {
-    float: left;
+    left: 0;
 	border-radius: 3px 0 0 3px;
 	background-color: black;
 	opacity: 50%;
@@ -119,4 +123,9 @@ h1
   .ativo
 {
     background-color: red;
+}
+.span1
+{
+    max-height: 65%;
+    max-width: 65%;
 }

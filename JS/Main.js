@@ -51,7 +51,7 @@ function showSlides(n) {
     {
         imglogo[0].setAttribute("src", "IMG/png/mini-logo.png");
 
-        if(scroll<0.33)
+        if(scroll<0.28)
         {
             setaa[0].setAttribute("href", "#projetos");
             console.log("home");
@@ -60,7 +60,7 @@ function showSlides(n) {
             a[1].setAttribute("id", "a")
             a[2].setAttribute("id", "a")
         }
-        if(scroll>=0.33 && scroll<0.66)
+        if(scroll>=0.28 && scroll<0.61)
         {
             setaa[0].setAttribute("href", "#sobre");
             seta[0].setAttribute("style", "display:flex");
@@ -68,7 +68,7 @@ function showSlides(n) {
             a[1].setAttribute("id", "a")
             a[2].setAttribute("id", "a")
             console.log("projetos");
-        }else if(scroll>=0.66 && scroll<0.95)
+        }else if(scroll>=0.61 && scroll<0.95)
         {
             setaa[0].setAttribute("href", "#contatos");
             seta[0].setAttribute("style", "display:flex");
