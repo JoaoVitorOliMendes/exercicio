@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"; type=text/html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headot</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='CSS/Estilo.css'>
+    <link rel='stylesheet' type='text/css' href='CSS/bootstrap.min.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>html{scroll-behavior: smooth;}</style>
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+          <span style="margin: 1% 0 0 0;color:darkslategrey;"><a href="#home"><img src="IMG/png/logo.png" class="span1"></a></span>
+          
+          <ul class="nav navbar-nav" style="float: right;margin: 1% -10% 0 0;">
+            <li class="nav-item">
+              <a id="a" class="nav-link a" href="#projetos">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a id="a" class="nav-link a" href="#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a id="a" class="nav-link a" href="#contatos">Contatos</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <!-- Seta -->
+    <div class="seta">
+        <a href="#projetos" class="setaa"><img src="IMG/png/V.png" style="max-width: 60px;max-height: 60px;"></a>
+    </div>
+
+    <!-- content -->
+    <!-- Home -->
+    <div class="cont" id="home">
+        <h1 style="display: block;padding: 75px;">Impactando Vidas,<br>Impulsionando Negócios.</h1>
+        <img src="IMG/png/pessoas.png" style="padding: 75px;">
+    </div>
+    <!--Projetos-->
+    <div class="cont" id="projetos">
+        <div class="container-fluid">
+            <div class="slideshow-container" style="border: solid;">
+
+                <div class="divdot">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              <div class="slide">
+                <div class="text"><h1 style="margin-bottom: 10%;color:blue">Lorem Ipsum</h1><p style="font-size: 18px;"><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</b></p></div>
+                <div class="simimg"></div>
+              </div>
+              <div class="slide">
+                <div class="text"><h1 style="margin-bottom: 10%;color:blue">Lorem Ipsum2</h1><p style="font-size: 18px;"><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</b></p></div>
+                <div class="simimg"></div>
+              </div>
+              <div class="slide">
+                <div class="text"><h1 style="margin-bottom: 10%;color:blue">Lorem Ipsum3</h1><p style="font-size: 18px;"><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</b></p></div>
+                <div class="simimg"></div>
+              </div>
+            
+          </div>
+        </div>
+    </div>
+    <!--Sobre-->
+    <div class="cont" id="sobre"></div>
+    <!--Contatos-->
+    <div class="cont form" id="contatos">
+        <div class="container">
+            <forms action="" method="post">
+                <div class="form-group col-6">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" class="form-control" required>
+                </div>
+                <div class="form-group col-6">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" class="form-control" required>
+                </div>
+                <div class="form-group col-6" style="margin-bottom: 5%;">
+                    <label for="msg">Menssagem</label>
+                    <input type="text" name="msg" id="msg" class="form-control" style="height: 8em;">
+                </div>
+                <div class="form-group col-12">
+                <button type="submit" name="cadastro" value="cadastro" class="btn btn-primary btn-rounded col-6">Enviar</button>
+				<a class="btn btn-outline-secondary col-1" style="float: right;" href="#home">Home</a>
+                </div>
+            </forms>
+        </div>
+    </div>
+
+
+<script src='JS/Main.js'></script>
+</body>
+</html>
