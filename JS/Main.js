@@ -17,9 +17,6 @@ function currentSlide(n) {
     }
 function showSlides(n) {
       i = 0;
-      
-      console.log(slides.length)
-      console.log(dots.length)
 
       if (n > slides.length)
       {
@@ -45,7 +42,6 @@ function showSlides(n) {
     var scroll = Math.ceil(window.scrollY);
     scroll = scroll / ($(document).height() - $(window).height());
     scroll = scroll.toFixed(2);
-    console.log(scroll);
 
     if(scroll != 0)
     {
@@ -54,7 +50,6 @@ function showSlides(n) {
         if(scroll<0.28)
         {
             setaa[0].setAttribute("href", "#projetos");
-            console.log("home");
             seta[0].setAttribute("style", "display:flex");
             a[0].setAttribute("id", "a")
             a[1].setAttribute("id", "a")
@@ -67,7 +62,6 @@ function showSlides(n) {
             a[0].setAttribute("id", "ativo")
             a[1].setAttribute("id", "a")
             a[2].setAttribute("id", "a")
-            console.log("projetos");
         }else if(scroll>=0.61 && scroll<0.95)
         {
             setaa[0].setAttribute("href", "#contatos");
@@ -75,14 +69,12 @@ function showSlides(n) {
             a[1].setAttribute("id", "ativo");
             a[0].setAttribute("id", "a")
             a[2].setAttribute("id", "a")
-            console.log("sobre");
         }else if(scroll>=0.99)
         {
             seta[0].setAttribute("style", "display:none");
             a[2].setAttribute("id", "ativo");
             a[0].setAttribute("id", "a")
             a[1].setAttribute("id", "a")
-            console.log("contatos");
             imglogo[0].setAttribute("src", "IMG/png/logo.png")
         }
     }
